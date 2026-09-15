@@ -1,4 +1,7 @@
 #!/bin/bash
+pushd cred/ammarfaizi2;
+bash trx.sh save;
+popd;
 set -xe;
 zip -9er cred.zip cred/;
 sha256sum cred.zip > cred.zip.sha256sum;
